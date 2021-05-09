@@ -1,0 +1,36 @@
+name: Deploy travels
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+        - ".github/workflows/travels.yaml"
+        - "travels/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+      # with:
+      #   submodules: recursive
+
+    - name: hugo
+      uses: klakegg/actions-hugo@1.0.0
+      with:
+        source: travels
+
+    - name: debug public
+      run: ls -lR travels/public
+
+    - name: create ssh.key
+      run: |
+        echo "${{ secrets.SSH_KEY_HIRANO_CC }}" > ssh.key
+        chmod 400 ssh.key
+
+    - name: rsync to production environment
+      run: |
+        rsync -auzv --delete -e "ssh -p27" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travels/
