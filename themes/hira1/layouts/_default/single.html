@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>{{ .Page.Title }}</h1>
+  <div class="main">
+    <hr />
+    {{ .Content }}
+  </div>
+  <ul class="right">
+    {{- range .Parent.Pages }}
+        <li><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+    {{- end }}
+  </ul>
+  {{ end }}

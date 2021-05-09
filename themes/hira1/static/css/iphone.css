@@ -1,0 +1,109 @@
+p img {
+ width: 95%;
+ margin-left: 2.5%;
+ margin-right: 2.5%;
+}
+
+p {
+	width: 100%;
+	font-size: 300%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 300%;
+
+    padding-left : 8px;
+
+    border-bottom-width : 1px;
+    border-bottom-style : solid;
+    border-bottom-color : #772222;
+
+    border-left-width : 16px;
+    border-left-style : solid;
+    border-left-color : #772222;
+}
+
+a {
+//    font-size: 300%;
+}
+
+td {
+    font-size: 200%;
+}
+
+td a {
+    font-size: 150%;
+}
+
+li a {
+    font-size: 400%;
+}
+
+div.main {
+	width: 100%;
+}
+
+div.right {
+    font-size: 60%;
+}
+
+dt{
+  font-size : 300%;
+  font-weight : bold;
+  color: #4400aa;
+
+  margin-top : 10px;
+  margin-bottom : 0px;
+
+  padding-top : 2px;
+  padding-left : 8px;
+  padding-bottom : 2px;
+}
+
+dd{
+  font-size : 250%;
+  line-height : 1.2;
+  margin-bottom : 10px;
+
+  padding-left : 20px;
+  padding-right : 15px;
+}
+
+table.result {
+    font-size : 80%;
+
+    background:#ffffff;
+    border-collapse: collapse;
+}
+table.result th {
+    border: 1px solid #aaaaaa;
+    padding: 1px 3px 0px 3px;
+    background: #ffffdd;
+}
+table.result td {
+    border: 1px solid #aaaaaa;
+    padding: 2px 3px 1px 3px;
+    text-align: right;
+}
+table.result td.left {
+    text-align: left;
+    background: #eeffff;
+}
+
+h4 {
+    font-size: 280%;
+
+  padding-left : 8px;
+
+  border-bottom-width : 1px;
+  border-bottom-style : solid;
+  border-bottom-color : #666666;
+
+  border-left-width : 7px;
+  border-left-style : solid;
+  border-left-color : #666666;
+}

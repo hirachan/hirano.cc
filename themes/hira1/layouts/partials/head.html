@@ -1,0 +1,8 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ .Page.Title }}</title>
+    {{- partial "twitter_card.html" . -}}
+    <link href="{{ .Site.BaseURL }}css/pc.css" rel="stylesheet" type="text/css" media="screen and (min-device-width: 481px)">
+    <link href="{{ .Site.BaseURL }}css/iphone.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)">
+</head>
+  

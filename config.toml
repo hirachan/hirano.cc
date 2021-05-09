@@ -1,0 +1,15 @@
+# baseURL = "http://hira8.hira/"
+baseURL = "https://hirano.cc/travels/"
+languageCode = "ja-jp"
+title = "Travels"
+theme = "hira1"
+
+[[menu.main]]
+weight = 10
+name = "ISAN2020"
+url = "bicycle/isan2020/"
+
+[[menu.main]]
+weight = 20
+name = "BPB1400"
+url = "bicycle/BPB2016/"
