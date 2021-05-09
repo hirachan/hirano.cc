@@ -33,4 +33,4 @@ jobs:
 
     - name: rsync to hirano.cc
       run: |
-        rsync -auzv --delete -e "ssh -p27 -i ssh.key" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travels/
+        rsync -auzv --delete -e "ssh -p27 -i ssh.key -OKexAlgorithms=diffie-hellman-group1-sha1" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travels/
