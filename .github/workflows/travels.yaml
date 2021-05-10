@@ -29,9 +29,11 @@ jobs:
 
     - name: create ssh.key
       run: |
-        echo "${{ secrets.SSH_KEY_HIRANO_CC }}" > ssh.key
+        echo "${SSH_KEY}" > ssh.key
         chmod 400 ssh.key
-
+      env:
+        SSH_KEY:
+          ${{ secrets.SSH_KEY_HIRANO_CC }}
     - name: rsync to hirano.cc
       run: |
         rsync -auzv --delete -e "ssh -p27 -i ssh.key -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group-exchange-sha1" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travels/
