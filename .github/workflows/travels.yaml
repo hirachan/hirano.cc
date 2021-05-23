@@ -19,10 +19,14 @@ jobs:
       # with:
       #   submodules: recursive
 
-    - name: hugo
-      uses: klakegg/actions-hugo@1.0.0
-      with:
-        source: travels
+    # - name: hugo
+    #   uses: klakegg/actions-hugo@1.0.0
+    #   with:
+    #     source: travels
+
+    - name: Build hugo
+      run: |
+        docker run -p 1313:1313 -it --rm -v `pwd`/travels:/src peaceiris/hugo:latest-full
 
     - name: debug public
       run: ls -lR travels/public
