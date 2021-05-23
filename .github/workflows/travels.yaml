@@ -24,6 +24,11 @@ jobs:
     #   with:
     #     source: travels
 
+    - name: setup tailwind
+      run: |
+        cd travels
+        npm install
+
     - name: Build hugo
       run: |
         docker run -p 1313:1313 --rm -v `pwd`/travels:/src peaceiris/hugo:latest-full
