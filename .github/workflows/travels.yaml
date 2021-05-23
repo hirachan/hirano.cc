@@ -26,7 +26,7 @@ jobs:
 
     - name: Build hugo
       run: |
-        docker run -p 1313:1313 -it --rm -v `pwd`/travels:/src peaceiris/hugo:latest-full
+        docker run -p 1313:1313 --rm -v `pwd`/travels:/src peaceiris/hugo:latest-full
 
     - name: debug public
       run: ls -lR travels/public
