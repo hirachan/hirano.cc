@@ -3,6 +3,15 @@ baseURL = "https://hirano.cc/travels/"
 languageCode = "ja-jp"
 title = "Travels"
 theme = "hira1"
+# theme = "Blonde"
+disablePathToLower = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 
 [[menu.main]]
 weight = 10

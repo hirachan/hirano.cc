@@ -1,34 +1,9 @@
-  <center>
-    <table width="75%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        {{- with .NextInSection -}}
-        <td align=left>
-            <a href="{{ .Permalink }}"><img src="/img/left.gif" border=0 alt="left arrow" width="20" height="22">{{ .LinkTitle }}</a>
-        </td>
-        {{- end -}}
-        <td align=center>
-          <a href=".."><img src="/img/up.gif" border=0 alt="up" width="20" height="22">戻る</a>
-        </td>
-        {{- with .PrevInSection -}}
-        <td align=right>
-          <a href="{{ .Permalink }}">{{ .LinkTitle }}<img src="/img/right.gif" border=0 alt="right arrow" width="20" height="22"></a>
-        </td>
-        {{- end -}}
-    </tr>
-    </table>
-  </center>
+<div class="bg-blue-200 flex justify-between text-blue-800">
+  <div class="px-4 py-2">
+    <a href="/"><p class="hover:opacity-75">🏠Back to Home</p></a>
+  </div>
+  <div class="px-4 py-2">
+    <a href="mailto:yo@hirano.cc"><p class=" hover:text-blue-600">✉ yo@hirano.cc</p></a>
+  </div>
 
-  <hr />
-
-  <table width="100%">
-    <tr>
-      <td align="left">
-        <a href="/"><img src="/img/u2_home.gif" alt="home" border="0" width="96" height="30">ひらちゃんのホーム</a>
-      </td>
-      <td align="right" valign="top">
-        email:<a href="mailto:yo@hirano.cc">
-          <email>yo@hirano.cc</email>
-        </a>
-      </td>
-    </tr>
-  </table>
+</div>

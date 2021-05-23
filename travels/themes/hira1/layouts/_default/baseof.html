@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body bgcolor=#a2c48c text=black link=#b00000 vlink=007700>
         {{- partial "header.html" . }}
-        <div id="content">
-        {{ block "main" . }}{{ end }}
-        </div>
-        {{ partial "footer.html" . }}
+    <body>
+        <!--div-->
+            {{ block "main" . }}{{ end }}
+        <!--/div-->
+    {{ partial "footer.html" . }}
+
     </body>
 </html>

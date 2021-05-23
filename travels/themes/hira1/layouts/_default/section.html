@@ -1,11 +1,50 @@
 {{ define "main" }}
-  <main>
-      {{ .Content }}
-          <ul class="contents">
-          {{ range .Paginator.Pages }}
-              <li><a href="{{.Permalink}}">{{.LinkTitle}}</a>
-              </li>
-          {{ end }}
-          </ul>
-  </main>
+  <div class="text-4xl bg-blue-300">
+    <p class="text-indigo-900 py-2 md:py-4 px-2 md:px-8 m-0">{{ .Title }}</p>
+  </div>
+  <div class="md:flex">
+    <div class="md:w-2/12 bg-green-200">
+      <ul class="whitespace-nowrap pl-2 py-4 text-yellow-800">
+        {{- range .Parent.Pages }}
+          <li class="hover:text-yellow-600"><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="px-2 md:px-8 md:w-7/12 bg-yellow-100 text-yellow-800 ">
+      <main>
+        {{- if .Params.Logo -}}
+          <img src="{{ .Params.Logo }}" class="mx-auto">
+        {{- end -}}
+        <hr>
+        {{ .Content }}
+
+        {{- range first 1 .Pages -}}
+          <div class="flex justify-center">
+          <div class="mx-8 px-2 border-2 border-yellow-600 rounded-full bg-blue-200 font-bold text-xl hover:opacity-75 shadow-md">
+            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          </div>
+          </div>
+        {{- end -}}
+        {{- if .Pages -}}
+          <div class="text-xl mb-2 font-bold border-yellow-500 border-b-2 border-l-8 px-2 mt-4"><a name="toc">もくじ</a></div>
+          <div class="flex justify-center">
+            <div class="bg-yellow-200 inline-block px-4 border-4 border-yellow-500 my-4">
+              <ul class="py-2 md:whitespace-nowrap">
+                {{- range .Paginator.Pages }}
+                  <li class="hover:text-yellow-600"><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+                {{- end }}
+              </ul>
+            </div>
+          </div>
+        {{- end -}}
+      </main>
+    </div>
+    <div class="hidden md:block md:w-3/12 bg-green-200 text-yellow-800">
+      <ul class="py-2 my-2 whitespace-nowrap pl-4">
+        {{- range .Pages }}
+          <li class="hover:text-yellow-600"><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+  </div>
 {{ end }}

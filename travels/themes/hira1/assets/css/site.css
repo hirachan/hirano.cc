@@ -1,0 +1,55 @@
+.starter {
+  color: blue;
+}
+
+p img {
+  @apply border-4 border-yellow-200 my-2 mx-auto;
+}
+
+h1 {
+  @apply text-2xl mb-4 bg-blue-300;
+}
+
+h2 {
+  @apply text-xl mb-2 font-bold border-yellow-500 border-b-2 border-l-8 px-2 mt-4;
+}
+
+h3 {
+  @apply mb-2 font-bold border-yellow-500 border-b-2 px-2 mt-4;
+}
+
+
+p a {
+  @apply font-bold hover:opacity-75;
+}
+
+p {
+  @apply mb-4;
+}
+
+dt {
+  @apply text-xl font-bold text-blue-900 mb-2 pt-2;
+}
+
+dd {
+  @apply pl-4 mb-8
+}
+
+table.result {
+    background:#ffffff;
+    border-collapse: collapse;
+}
+table.result th {
+    border: 1px solid #aaaaaa;
+    padding: 1px 3px 0px 3px;
+    background: #ffffdd;
+}
+table.result td {
+    border: 1px solid #aaaaaa;
+    padding: 2px 3px 1px 3px;
+    text-align: right;
+}
+table.result td.left {
+    text-align: left;
+    background: #eeffff;
+}
