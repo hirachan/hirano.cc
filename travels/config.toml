@@ -6,6 +6,9 @@ theme = "hira1"
 # theme = "Blonde"
 disablePathToLower = true
 
+[build]
+  writeStats = true
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

@@ -1,7 +1,15 @@
+const themeDir = __dirname + '/../../';
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['layouts/**/*.html'],
+   purge: {
+     mode: 'all',
+     content: [
+       themeDir + 'layouts/**/*.html',
+       'layouts/**/*.html',
+       'content/**/*.html',
+     ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
