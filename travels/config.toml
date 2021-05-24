@@ -1,5 +1,5 @@
 # baseURL = "http://hira8.hira/"
-baseURL = "https://hirano.cc/travels/bicycle"
+baseURL = "https://hirano.cc/travel/bicycle"
 languageCode = "ja-jp"
 title = "Travels"
 theme = "hira1"
