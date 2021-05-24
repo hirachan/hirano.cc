@@ -31,7 +31,7 @@ jobs:
 
     - name: Build hugo
       run: |
-        docker run -p 1313:1313 --rm -v `pwd`/travels:/src -e NODE_ENV=production peaceiris/hugo:latest-full
+        docker run -p 1313:1313 --rm -v `pwd`/travels:/src -e HUGO_ENV="production" -e NODE_ENV="production" peaceiris/hugo:latest-full
 
     - name: debug public
       run: ls -lR travels/public
@@ -45,4 +45,4 @@ jobs:
           ${{ secrets.SSH_KEY_HIRANO_CC }}
     - name: rsync to hirano.cc
       run: |
-        rsync -auzv --delete -e "ssh -p27 -i ssh.key -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group-exchange-sha1" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travels/
+        rsync -auzv --delete -e "ssh -p27 -i ssh.key -oStrictHostKeyChecking=no -oKexAlgorithms=+diffie-hellman-group-exchange-sha1" travels/public/ hirano@hirano.cc:/home/hirano/public_html/travel/bicycle/
