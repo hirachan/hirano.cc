@@ -1,5 +1,5 @@
 <!-- Modified from _internal/twitter_card.html -->
-{{- if .IsPage -}}
+{{/* {{- if .IsPage -}} */}}
   {{- with .Params.twitterImage -}}
   <!-- The Open Graph protocol data -->
     <meta property="og:image" content="{{ print $.Site.BaseURL . }}"/>
@@ -20,4 +20,4 @@
   {{- with .Site.Params.twitterCardSite }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
   {{- with .Site.Params.twitterCardDomain }}<meta name="twitter:domain" content="{{ . }}"/>{{ end }}
   {{- with .Site.Params.twitterCardAuthor }}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
-{{ end }}
+{{/* {{ end }} */}}

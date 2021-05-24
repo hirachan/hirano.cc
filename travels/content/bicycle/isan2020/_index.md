@@ -4,7 +4,7 @@ linktitle: "タイブルベ ISAN2020 (2020km)"
 date: 2021-05-23T05:05:23Z
 draft: false
 weight: 20200201
-twitterImage: "isan2020/img/map_day1.png"
+twitterImage: "isan2020/img/isan2020_logo.png"
 description: "睡眠時間は少し少なめですが、明るいうちにゴールしようと思うので、予定通り7時前に出発します。CP18のセブンイレブンまでは3km程でした。"
 logo: img/isan2020_logo.png
 ---
