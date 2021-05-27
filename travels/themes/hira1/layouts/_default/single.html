@@ -7,7 +7,7 @@
       <ul class="whitespace-nowrap pl-2 py-4 text-yellow-800">
         {{- if .Parent.Parent }}
         {{- range .Parent.Parent.Pages }}
-          <li class="hover:text-yellow-600"><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+          <li class="hover:text-yellow-600">・<a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
         {{- end }}
         {{- end -}}
       </ul>

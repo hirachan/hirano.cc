@@ -6,7 +6,7 @@
     <div class="md:w-2/12 bg-green-200">
       <ul class="whitespace-nowrap pl-2 py-4 text-yellow-800">
         {{- range .Parent.Pages }}
-          <li class="hover:text-yellow-600"><a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+          <li class="hover:text-yellow-600">・<a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
         {{- end }}
       </ul>
     </div>
