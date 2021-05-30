@@ -1,6 +1,7 @@
 ---
 title: "タイブルベ ISAN2020 (2020km)"
 linktitle: "タイブルベ ISAN2020 (2020km)"
+term: 2020 2/2 - 2/9
 date: 2021-05-23T05:05:23Z
 draft: false
 weight: 20200201

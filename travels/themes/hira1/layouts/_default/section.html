@@ -6,14 +6,15 @@
     <div class="md:w-2/12 bg-green-200">
       <ul class="whitespace-nowrap pl-2 py-4 text-yellow-800">
         {{- range .Parent.Pages }}
-          <li class="hover:text-yellow-600">・<a href="{{.Permalink}}">{{.LinkTitle}}</a></li>
+          <li class="hover:opacity-75">・<a href="{{.Permalink}}">{{.LinkTitle}}{{- with .Params.term -}}<br />
+          <div class="text-sm mx-4 text-green-800">{{ . }}</div>{{- end -}}</a></li>
         {{- end }}
       </ul>
     </div>
     <div class="px-2 md:px-8 md:w-7/12 bg-yellow-100 text-yellow-800 ">
       <main>
         {{- if .Params.Logo -}}
-          <img src="{{ .Params.Logo }}" class="mx-auto">
+          <img src="{{ .Params.Logo }}" {{- with .Params.logo_width -}}width="{{ . }}"{{- end -}} class="mx-auto">
         {{- end -}}
         <hr>
         {{ .Content }}
