@@ -5,7 +5,7 @@ term: 2019 12/28 - 2020 01/03
 date: 2021-05-30T04:05:23Z
 draft: false
 weight: 20191228
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "自転車でタイのバンコクからラオスのヴィエンチャンまで走ってきました"
 logo: img/Thai_Highway-2.svg
 logo_width: 250

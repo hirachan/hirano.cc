@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 700
 linktitle: "おまけ: Skylane ～ Tokyo"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "今日は、スカイレーンをサイクリングして、そのまま飛行機で帰ります。"
 ---
 ## スカイレーン

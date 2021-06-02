@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 100
 linktitle: "1日目: Bangkok ～ Sara Buri"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "さて、今日は12/29。サラブリーというところまで、行ってみるつもりです。今回の旅は、1/3にラオスのヴィエンチャンから飛行機に乗れればokです。"
 ---
 ## バンコク～サラブリー

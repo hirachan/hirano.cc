@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 600
 linktitle: "6日目: Vientiane (Laos) ～ Bangkok"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "今日は飛行機輪行で一気にバンコクまで戻ります。宿から空港までは自転車で移動です。"
 ---
 ## ヴィエンチャン空港

@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 300
 linktitle: "3日目: Nakhon Ratchasima ～ Kkon Kaen"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "今日は12/31、大晦日です。今日はコンケーンまで行ってみる予定です。"
 ---
 ## ナコーンラチャシマー出発

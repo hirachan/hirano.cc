@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 10
 linktitle: "出発～到着"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "夕方成田に到着し、2019年12月27日 18:35の便でバンコクに向かいます。"
 ---
 ## 出発

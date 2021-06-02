@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 500
 linktitle: "5日目: Udonthani ～ Vientiane (Laos)"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "1月2日になりました。今日は、ノンカーイまで行き、国境を越えてラオスのヴィエンチャンを目指します。"
 ---
 ## ウドンタニー出発

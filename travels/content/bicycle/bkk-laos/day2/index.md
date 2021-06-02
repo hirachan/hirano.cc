@@ -4,7 +4,7 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 200
 linktitle: "2日目: Sara Buri ～ Nakhon Ratchasima"
-twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "今日は12/30。ナコーンラチャシマーまで、行ってみるつもりです。20km先から少し登りがあって、上りきったところにおいしいハンバーガーとかステーキがあるらしいので、寄ってみることにします。"
 ---
 ## サラブリー出発
