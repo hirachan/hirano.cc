@@ -4,8 +4,8 @@ date: 2020-03-28T08:05:23Z
 draft: false
 weight: 200
 linktitle: "2日目: Sara Buri ～ Nakhon Ratchasima"
-twitterImage: "isan2020/img/Thai_Highway-2.svg"
-description: "ISAN2020にどのように申し込み、出発までに何を準備したかです。"
+twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
+description: "今日は12/30。ナコーンラチャシマーまで、行ってみるつもりです。20km先から少し登りがあって、上りきったところにおいしいハンバーガーとかステーキがあるらしいので、寄ってみることにします。"
 ---
 ## サラブリー出発
 
