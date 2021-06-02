@@ -5,7 +5,7 @@ draft: false
 weight: 700
 linktitle: "おまけ: Skylane ～ Tokyo"
 twitterImage: "bkk-laos/img/Thai_Highway-2.svg"
-description: "1月2日になりました。今日は、ノンカーイまで行き、国境を越えてラオスのヴィエンチャンを目指します。"
+description: "今日は、スカイレーンをサイクリングして、そのまま飛行機で帰ります。"
 ---
 ## スカイレーン
 
