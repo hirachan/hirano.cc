@@ -5,7 +5,7 @@ term: 2021 10/30
 date: 2020-10-31T03:50:00Z
 draft: false
 weight: 20211031
-twitterImage: "bicycle/brm911-2021/img/map.jpg"
+twitterImage: "brm911-2021/img/map.jpg"
 description: ""
 logo: img/map.jpg
 ---
