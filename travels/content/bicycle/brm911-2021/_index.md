@@ -6,7 +6,7 @@ date: 2020-10-31T03:50:00Z
 draft: false
 weight: 20211031
 twitterImage: "brm911-2021/img/map.jpg"
-description: ""
+description: "オダックスランドヌール日本橋主催のブルベ100周年記念イベントに参加してきました。1921に初めて開催されたブルベのルートをオマージュしたルートになっています。"
 logo: img/map.jpg
 ---
 ## はじめに
