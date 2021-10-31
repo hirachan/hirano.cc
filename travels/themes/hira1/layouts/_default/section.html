@@ -4,7 +4,7 @@
   </div>
   <div class="md:flex">
     <div class="md:w-2/12 bg-green-200">
-    <div id="menu_button" class="md:hidden bg-green-300 px-2">三 メニュー</div>
+    <div id="menu_button" class="md:hidden bg-green-300 px-2">三 メニュー(他の記事はこちら)</div>
       <ul id="menu" class="whitespace-nowrap pl-2 py-0 text-yellow-800 hidden md:block">
         {{- range .Parent.Pages }}
           <li class="hover:opacity-75">・<a href="{{.Permalink}}">{{.LinkTitle}}{{- with .Params.term -}}<br />
