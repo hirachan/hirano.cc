@@ -1,7 +1,7 @@
 ---
 title: "KOREA2030 2023-06-02（まとめ）"
 date: 2023-06-19T00:00:00Z
-draft: false
+draft: true
 weight: 1000
 linktitle: "まとめ"
 twitterImage: "korea2030/img/2030poster1.png"
