@@ -1,7 +1,7 @@
 ---
 title: "KOREA2030 2023-06-12（10日目: 帰国 番外編）"
 date: 2023-06-19T00:00:00Z
-draft: true
+draft: false
 weight: 1000
 linktitle: "10日目: 帰国 番外編"
 twitterImage: "korea2030/img/IMG_2108.JPG"
