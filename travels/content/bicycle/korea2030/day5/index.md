@@ -3,7 +3,7 @@ title: "KOREA2030 2023-06-07（5日目: 당진(タンジン)～서울(ソウル)
 date: 2023-06-19T00:00:00Z
 draft: false
 weight: 500
-linktitle: "5日目: 당진(タンジン)～서울(ソウル)"
+linktitle: "5日目: 당진(タンジン)～서울(ソウル) 1327km"
 twitterImage: "korea2030/img/map_day5.png"
 description: "5日目はソウルまで行く予定です。しかし、ここからいろいろとトラブル発生。さてどうするのか。"
 ---

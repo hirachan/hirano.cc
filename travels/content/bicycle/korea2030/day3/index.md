@@ -1,10 +1,10 @@
 ---
 title: "KOREA2030 2023-06-05（3日目: 완도(ワンド)～정
-읍(チョンウプ)）"
+읍(チョンウプ) 809km）"
 date: 2023-06-19T00:00:00Z
 draft: false
 weight: 300
-linktitle: "3日目: 완도(ワンド)～정읍(チョンウプ)"
+linktitle: "3日目: 완도(ワンド)～정읍(チョンウプ) 809km"
 twitterImage: "korea2030/img/map_day3.png"
 description: "今日は완도(ワンド)の韓国半島の最南端を経由して정읍(チョンウプ)まで行きます。"
 ---
