@@ -5,6 +5,7 @@ title = "Travels"
 theme = "hira1"
 # theme = "Blonde"
 disablePathToLower = true
+Paginate = 30
 
 contentDir = "content/bicycle"
 
