@@ -1,11 +1,11 @@
 ---
-title: "Paris Brest Paris 2023 2023-08-21（2日目(1): Villaines-la-juhel 200km ～ Fougeres 293km）"
-date: 2023-08-21T08:00:00Z
+title: "Paris Brest Paris 2023 2023-08-21（2日目(2): Fougeres: 293km ～ Saint Nicolas-du-Pelem: 482km）"
+date: 2023-08-21T18:00:00Z
 draft: false
-weight: 200
-linktitle: "2日目(1): Villaines-la-juhel 200km ～ Fougeres 293km"
+weight: 300
+linktitle: "2日目(2): Fougeres: 293km ～ Saint Nicolas-du-Pelem: 482km"
 twitterImage: "PBP2023/img/IMG_5937.JPG"
-description: "1.5時間くらいの目覚ましより早く目が覚めました。1時間15分くらい寝たでしょうか。ここVillaines-la-Juhelは仮眠所の近くに大きな食堂があり、道路を挟んでコントロールの近くに小さな食堂があります。"
+description: "食堂は何部屋かに分かれていて、トイレを探して別の部屋に行くと神成さんがいました。ちなみに、ここのヴィレンヌと同様に食堂にきれいなトイレがあります。"
 ---
 
 ## Fougeres: 293km ～ Tinteniac: 354km
