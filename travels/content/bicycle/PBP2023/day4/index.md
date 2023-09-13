@@ -3,7 +3,7 @@ title: "Paris Brest Paris 2023 2023-08-23（4日目: Loudeac: 782km ～Mortagne-
 date: 2023-08-23T08:00:00Z
 draft: false
 weight: 400
-linktitle: "4日目: Saint Nicolas-du-Pelem: 482km ～ Loudeac: 782km ～ Mortagne-au-Perche: 1099km"
+linktitle: "4日目: Loudeac: 782km ～ Mortagne-au-Perche: 1099km"
 twitterImage: "PBP2023/img/IMG_5937.JPG"
 description: "1時間20分くらい寝たでしょうか。
 今日も頑張って出発しましょう。前回は朝6時にここに着いて、諦めてDNFでした。ここから先は未知の世界です。
@@ -223,6 +223,9 @@ description: "1時間20分くらい寝たでしょうか。
 
 僕はいつもスープにもチーズを入れます。
 コクがでておいしいですよ。
+
+![](../img/IMG_6215.JPG)
+
 
 さて、時刻は23時。
 残りはあと200kmです。
