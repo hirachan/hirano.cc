@@ -7,4 +7,4 @@
 
 # git add $(grep '\./img/' content/bicycle/korea2030/*.md | grep -v http | sed 's|.*/img/\([^)]*\))|content/bicycle/korea2030/img/\1|')
 # git add $(grep '\.\./img/' content/bicycle/korea2030/*/*.md | grep -v http | sed 's|.*/img/\([^)]*\))|content/bicycle/korea2030/img/\1|')
-git add $(grep '\.\./img/' content/bicycle/silkroad2000/*/*.md | grep -v http | sed 's|.*/img/\([^)]*\))|content/bicycle/silkroad2000/img/\1|')
+git add $(grep '\.\./img/' content/bicycle/silkroad2000/*/*.md | grep -v http | grep -v video | sed 's|.*/img/\([^)]*\))|content/bicycle/silkroad2000/img/\1|')
