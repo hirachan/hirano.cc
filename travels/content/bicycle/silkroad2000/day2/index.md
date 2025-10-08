@@ -1,13 +1,13 @@
 ---
-title: "SilkRoad2000km - 2日目: サマルカンド～ブハラ 270km"
-linktitle: "2日目: サマルカンド～ブハラ 270km"
+title: "SilkRoad2000km - 2日目: サマルカンド～ブハラ 273km"
+linktitle: "2日目: サマルカンド～ブハラ 273km"
 date: 2025-09-18T06:00:00Z
 draft: false
 weight: 200
 twitterImage: "silkroad2000/img/gsr2000-satelite.png"
 description: "スタートはこのキャラバンの像がある公園です。公園に行くと2人自転車の人たちがいました。参加者だと思ったのですが、ただ単にサイクリングに来たのか応援に来たのか、参加者ではありませんでした。"
 ---
-## CP1(サマルカンド): 304km ～ CP2(ブハラ): 570km
+## CP1(サマルカンド): 304km ～ CP2(ブハラ): 577km
 
 さて、2日目です。
 予定通り5時15分に起きて、6時に待ち合わせるためにRuslanのTelegramを確認します。
