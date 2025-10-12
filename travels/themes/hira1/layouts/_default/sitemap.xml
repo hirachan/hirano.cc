@@ -1,31 +1,21 @@
 {{- /* layouts/_default/sitemap.xml */ -}}
-{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{/* Home */}}
   <url>
     <loc>{{ .Site.Home.Permalink }}</loc>
-    {{ with .Site.Home.Lastmod }}<lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>{{ end }}
-    {{ with .Site.Home.Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
-    {{ with .Site.Home.Sitemap.Priority }}<priority>{{ . }}</priority>{{ end }}
+    {{ with .Site.Home.Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
   </url>
-
-  {{/* セクションページ（taxonomy系は除外） */}}
-  {{ range .Site.Sections }}
+  {{- range .Site.Sections -}}
     <url>
       <loc>{{ .Permalink }}</loc>
-      {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>{{ end }}
-      {{ with .Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
-      {{ with .Sitemap.Priority }}<priority>{{ . }}</priority>{{ end }}
+      {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
     </url>
-  {{ end }}
-
-  {{/* 通常のコンテンツページのみ（RegularPages は taxonomy を含まない） */}}
-  {{ range .Site.RegularPages }}
+  {{- end -}}
+  {-{ range .Site.RegularPages -}}
     <url>
       <loc>{{ .Permalink }}</loc>
-      {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02T15:04:05Z07:00" }}</lastmod>{{ end }}
-      {{ with .Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
-      {{ with .Sitemap.Priority }}<priority>{{ . }}</priority>{{ end }}
+      {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
     </url>
-  {{ end }}
+  {{- end -}}
 </urlset>
