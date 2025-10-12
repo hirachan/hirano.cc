@@ -12,7 +12,7 @@
       {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
     </url>
   {{- end -}}
-  {-{ range .Site.RegularPages -}}
+  {{- range .Site.RegularPages -}}
     <url>
       <loc>{{ .Permalink }}</loc>
       {{ with .Lastmod }}<lastmod>{{ .Format "2006-01-02" }}</lastmod>{{ end }}
