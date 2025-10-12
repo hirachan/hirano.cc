@@ -1,6 +1,6 @@
 ---
-title: "ブルベ・自転車旅行記"
-linktitle: "ブルベ・自転車旅行記"
+title: "ひらちゃんのブルベ・自転車旅行記"
+linktitle: "ひらちゃんのブルベ・自転車旅行記"
 date: 2025-10-12T07:05:23Z
 draft: false
 weight: 100
