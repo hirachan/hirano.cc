@@ -9,6 +9,12 @@ twitterImage: "bkk-laos/img/Thai_Highway-2.png"
 description: "自転車でタイのバンコクからラオスのヴィエンチャンまで走ってきました"
 logo: img/Thai_Highway-2.svg
 logo_width: 250
+cover: bkk-laos/img/img_7944.jpg
+distance: 685km
+location: バンコク→ヴィエンチャン
+country: タイ・ラオス
+excerpt: ブルベではなく個人でタイをサイクリングしてきました。バンコクを出発して、国道2号線の起点まで行き、国道2号線沿いにナコーンラチャシマー、コンケーン、ウドンタニー、ノンカーイ、更に国境を越えてラオスのヴィエンチャンまで行って、飛行機でバンコクまで帰るというルートです。
+tags: [タイ, ラオス, サイクリング]
 ---
 ## 正月旅行
 

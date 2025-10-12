@@ -8,6 +8,12 @@ weight: 20230602
 twitterImage: "korea2030/img/2030poster1.png"
 description: "2023年6月3日、韓国を一周する2030kmのブルベが開催されたので、参加してきました。"
 logo: img/2030poster1.png
+cover: korea2030/img/2030poster1.png
+distance: 2030km
+location: 韓国一周
+country: 韓国
+excerpt: WORLD EXPO 2030を韓国釜山市へ誘致するためのプロモーションのイベントとして韓国を一周する2030kmのブルベが開催されましたので参加してきました。釜山をスタートして韓国を時計回りに1周するルートです。おいしい韓国料理を食べながら走る楽しいブルベになりました。
+tags: [韓国, ブルベ, LRM, 2000km以上]
 ---
 ## KOREA 2030
 

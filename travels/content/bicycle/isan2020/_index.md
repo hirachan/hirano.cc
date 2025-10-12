@@ -8,6 +8,12 @@ weight: 20200201
 twitterImage: "isan2020/img/isan2020_logo.png"
 description: "2020年2月2日、タイで2020kmのブルベが開催されたので、参加してきました。"
 logo: img/isan2020_logo.png
+cover: isan2020/img/isan2020_logo.png
+distance: 2020km
+location: イサーン
+country: タイ
+excerpt: 2020年2月2日、タイで2020kmのブルベが開催されたので、参加してきました。タイの東北部に位置するイサーン地方をぐるっと反時計回りに一周するルートです。
+tags: [タイ, ブルベ, LRM, 2000km以上]
 ---
 ## ISAN 2020
 

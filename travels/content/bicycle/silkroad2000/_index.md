@@ -8,6 +8,13 @@ weight: 20250917
 twitterImage: "silkroad2000/img/gsr2000-satelite.png"
 description: "2025年9月17日、ウズベキスタンのシルクロードを通って世界遺産を巡る2000kmのブルベに参加してきました。"
 logo: img/gsr2000-satelite.png
+distance: 2000km
+location: タシケント↔ヒヴァ
+country: ウズベキスタン
+cover: silkroad2000/img/gsr2000-satelite.png
+excerpt: 2025年9月17日、ウズベキスタンの2000kmブルベに参加してきました。タシケントを出発してシルクロードを通って世界遺産の町、サマルカンド、ブハラ、ヒヴァを往復するブルベです。
+tags: [ウズベキスタン, ブルベ, 2000km以上, LRM]
+
 ---
 ## Great Silk Road 2025 (2000km)
 

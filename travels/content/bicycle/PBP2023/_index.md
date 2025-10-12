@@ -7,7 +7,13 @@ draft: false
 weight: 20230820
 twitterImage: ""
 description: ""
-# logo: img/2030poster1.png
+cover: PBP2023/img/IMG_6214.JPG
+distance: 1200km
+country: フランス
+location: PBP
+excerpt: 2015年、2019年に続き3回目の挑戦です。今まで1200km以上のブルベは8回完走していますが、PBPはまで1度も完走出来ていません。今回はなんとかゴールまでは行きたいものです。
+
+tags: [フランス, ブルベ, PBP, 1200km]
 ---
 ## Paris Brest Paris 2023
 

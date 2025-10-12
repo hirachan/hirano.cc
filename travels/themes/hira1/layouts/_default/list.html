@@ -1,0 +1,138 @@
+{{/* layouts/bicycle/list.html — /bicycle/ 用。直下サブセクションのみ一覧表示（day* は出さない） */}}
+{{ define "main" }}
+<main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+
+  <!-- Header -->
+  <header class="mb-10">
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+      <p class="mt-2 text-base sm:text-lg text-gray-600">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+      <div class="prose mt-6">
+        {{ . | safeHTML }}
+      </div>
+    {{ end }}
+  </header>
+
+  {{/* /bicycle/ の直下サブセクションだけを対象（leaf は含まない） */}}
+  {{ $kids := sort .Sections "Date" "desc" }}
+
+  <!-- Controls: search + year filter -->
+  <section class="mb-8 grid gap-3 sm:grid-cols-3">
+    <div class="sm:col-span-2">
+      <label for="q" class="block text-sm font-medium">キーワード検索（セクション名・タグ・場所）</label>
+      <input id="q" type="search" placeholder="例：silk road、PBP、韓国"
+             class="mt-1 w-full rounded-xl border px-4 py-2 outline-none focus:ring-2"
+             oninput="filterCards()" />
+    </div>
+    <div>
+      <label for="year" class="block text-sm font-medium">年で絞り込み</label>
+      <select id="year" class="mt-1 w-full rounded-xl border px-4 py-2" onchange="filterCards()">
+        <option value="">すべて</option>
+        {{ $years := slice }}
+        {{ range $kids }}
+          {{ $y := .Date | time.Format "2006" }}
+          {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+        {{ end }}
+        {{ range sort $years "value" "desc" }}
+          <option value="{{ . }}">{{ . }}</option>
+        {{ end }}
+      </select>
+    </div>
+  </section>
+
+  {{/* ページネーション（サブセクション配列に対して） */}}
+  {{ $p := .Paginate $kids 12 }}
+
+  <!-- Cards grid（サブセクションのみ。day1 等は出ない） -->
+  <section id="cards" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {{ range $p.Pages }}
+      {{ $cover := .Params.cover | default "/images/placeholder.jpg" }}
+      {{ $loc := .Params.location }}
+      {{ $country := .Params.country }}
+      {{ $distance := .Params.distance }}
+      {{ $tags := delimit (.Params.tags | default (slice)) "," }}
+      {{ $year := .Date | time.Format "2006" }}
+      {{ $count := len .RegularPagesRecursive }}
+
+      <article class="group overflow-hidden rounded-2xl border shadow-sm hover:shadow-md transition"
+               data-title="{{ .Title | plainify }}"
+               data-tags="{{ $tags }}"
+               data-location="{{ $loc }} {{ $country }}"
+               data-year="{{ $year }}">
+        <a href="{{ .RelPermalink }}" class="block">
+          <div class="p-4">
+            <h2 class="mt-2 text-lg font-semibold leading-snug group-hover:underline">{{ .Title }}</h2>
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+              {{ with $loc }}<span>• {{ . }}</span>{{ end }}
+              {{ with $country }}<span>• {{ . }}</span>{{ end }}
+              {{ with $distance }}<span class="ml-auto">{{ . }}</span>{{end}}
+            </div>
+          <div class="aspect-[16/9] overflow-hidden bg-gray-100">
+            <img src="{{ $cover }}" alt="{{ .Title }} cover"
+                 class="h-full w-full object-cover group-hover:scale-105 transition"
+                 loading="lazy" />
+          </div>
+            <p class="mt-2 line-clamp-2 text-sm text-gray-600">
+              {{ if .Params.excerpt }}
+                {{ .Params.excerpt }}
+              {{ else }}
+                {{ if .Summary }}
+                  {{ .Summary | plainify }}
+                {{ else }}
+                  {{ .Content | plainify | truncate 140 }}
+                {{ end }}
+              {{ end }}
+            </p>
+            {{ with .Params.tags }}
+              <ul class="mt-3 flex flex-wrap gap-2 text-xs">
+                {{ range . }}
+                  <li class="rounded-full border px-2 py-0.5">#{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </section>
+
+  <!-- Empty state -->
+  <p id="empty" class="hidden mt-8 text-center text-gray-500">条件に合うセクションが見つかりませんでした。</p>
+
+  <!-- Pagination -->
+  <nav aria-label="Pagination" class="mt-10 flex items-center justify-center gap-2">
+    {{ with $p.Prev }}
+      <a href="{{ .URL }}" class="rounded-xl border px-3 py-2 text-sm hover:bg-gray-50">← 新しいセクション</a>
+    {{ else }}
+      <span class="cursor-not-allowed rounded-xl border px-3 py-2 text-sm text-gray-400">← 新しいセクション</span>
+    {{ end }}
+    <span class="text-sm text-gray-500">{{ $p.PageNumber }} / {{ $p.TotalPages }}</span>
+    {{ with $p.Next }}
+      <a href="{{ .URL }}" class="rounded-xl border px-3 py-2 text-sm hover:bg-gray-50">古いセクション →</a>
+    {{ else }}
+      <span class="cursor-not-allowed rounded-xl border px-3 py-2 text-sm text-gray-400">古いセクション →</span>
+    {{ end }}
+  </nav>
+</main>
+
+<script>
+  function filterCards() {
+    const q = document.getElementById('q').value.trim().toLowerCase();
+    const year = document.getElementById('year').value;
+    const cards = document.querySelectorAll('#cards article');
+    let visible = 0;
+    cards.forEach(card => {
+      const hay = (card.dataset.title + ' ' + card.dataset.tags + ' ' + card.dataset.location).toLowerCase();
+      const yearHit = !year || card.dataset.year === year;
+      const textHit = !q || hay.includes(q);
+      const show = yearHit && textHit;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    document.getElementById('empty').classList.toggle('hidden', visible !== 0);
+  }
+</script>
+{{ end }}
