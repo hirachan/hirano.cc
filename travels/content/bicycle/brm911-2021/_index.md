@@ -2,7 +2,8 @@
 title: "BRM911日本橋200 パリ・ステキだす"
 linktitle: "BRM911日本橋200"
 term: 2021 10/30
-date: 2020-10-31T03:50:00Z
+date: 2021-10-30
+eventdate: 2021-10-30
 draft: false
 weight: 20211031
 twitterImage: "brm911-2021/img/map.jpg"

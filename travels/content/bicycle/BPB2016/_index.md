@@ -2,7 +2,8 @@
 title: "Bangkok-Phrae-Bangkok 2016"
 linktitle: "Bangkok-Phrae-Bangkok 2016"
 term: 2016 12/24 - 12/29
-date: 2021-05-23T05:05:23Z
+date: 2016-12-24
+eventdate: 2016-12-24
 draft: false
 weight: 20161224
 twitterImage: "bicycle/BPB2016/img/map1.JPG"

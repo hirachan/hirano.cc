@@ -2,7 +2,8 @@
 title: "韓国ブルベ KOREA2030 (2030km)"
 linktitle: "韓国ブルベ KOREA2030 (2030km)"
 term: 2023 6/3 - 6/11
-date: 2023-06-17T00:05:23Z
+date: 2023-06-03
+eventdate: 2023-06-03
 draft: false
 weight: 20230602
 twitterImage: "korea2030/img/2030poster1.png"

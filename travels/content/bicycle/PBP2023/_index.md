@@ -2,7 +2,8 @@
 title: "PBP2023 (1219km)"
 linktitle: "Paris Brest Paris 2023"
 term: 2023 8/20 - 8/24
-date: 2023-09-01T00:05:23Z
+date: 2023-08-20
+eventdate: 2023-08-20
 draft: false
 weight: 20230820
 twitterImage: ""

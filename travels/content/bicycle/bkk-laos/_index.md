@@ -2,7 +2,8 @@
 title: "Bangkok→Laos 国道2号線の旅"
 linktitle: "Bangkok→Laos 国道2号線の旅"
 term: 2019 12/28 - 2020 01/03
-date: 2021-05-30T04:05:23Z
+date: 2019-12-28
+eventdate: 2019-12-28
 draft: false
 weight: 20191228
 twitterImage: "bkk-laos/img/Thai_Highway-2.png"

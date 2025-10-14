@@ -2,7 +2,8 @@
 title: "ウズベキスタン Great Silk Road 2000km"
 linktitle: "ウズベキスタン Great Silk Road 2000km"
 term: 2025 9/17 - 9/25
-date: 2025-09-17T00:00:00Z
+date: 2025-09-17
+eventdate: 2025-09-17
 draft: false
 weight: 20250917
 twitterImage: "silkroad2000/img/gsr2000-satelite.png"

@@ -32,7 +32,8 @@
         <option value="">すべて</option>
         {{ $years := slice }}
         {{ range $kids }}
-          {{ $y := .Date | time.Format "2006" }}
+          {{ $d := time.AsTime (or .Params.eventdate .Date) }}
+          {{ $y := $d | time.Format "2006" }}
           {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
         {{ end }}
         {{ range sort $years "value" "desc" }}
@@ -53,7 +54,8 @@
       {{ $country := .Params.country }}
       {{ $distance := .Params.distance }}
       {{ $tags := delimit (.Params.tags | default (slice)) "," }}
-      {{ $year := .Date | time.Format "2006" }}
+      {{ $d := time.AsTime (or .Params.eventdate .Date) }}
+      {{ $year := $d | time.Format "2006" }}
       {{ $count := len .RegularPagesRecursive }}
 
       <article class="group overflow-hidden rounded-2xl border shadow-sm hover:shadow-md transition"
@@ -65,7 +67,7 @@
           <div class="p-4">
             <h2 class="mt-2 text-lg font-semibold leading-snug group-hover:underline">{{ .Title }}</h2>
             <div class="flex items-center gap-2 text-sm text-gray-500">
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+              <time datetime="{{ $d | time.Format "2006-01-02" }}">{{ $d | time.Format "2006-01-02" }}</time>
               {{ with $loc }}<span>• {{ . }}</span>{{ end }}
               {{ with $country }}<span>• {{ . }}</span>{{ end }}
               {{ with $distance }}<span class="ml-auto">{{ . }}</span>{{end}}
