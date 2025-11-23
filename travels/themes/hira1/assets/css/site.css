@@ -61,3 +61,34 @@ table.result td.left {
     text-align: left;
     background: #eeffff;
 }
+
+main ul {
+  @apply list-disc ml-6 my-4;
+}
+
+main ul ul {
+  @apply list-disc ml-6 mt-1;
+}
+
+main ol {
+  @apply list-decimal ml-6 my-4;
+}
+
+main li {
+  @apply mb-1 leading-relaxed;
+}
+
+/* （オプション）本文中のリスト内リンクを少し強調したい場合 */
+main li a {
+  @apply font-bold hover:opacity-75;
+}
+
+/* li 内の複数段落だけ余白を狭くする */
+main li p {
+  @apply mb-2;
+}
+
+/* 最後の p は余白なしにするとより綺麗 */
+main li p:last-child {
+  @apply mb-0;
+}
