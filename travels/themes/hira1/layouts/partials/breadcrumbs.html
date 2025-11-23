@@ -1,0 +1,29 @@
+{{/* layouts/partials/breadcrumbs.html */}}
+<nav class="text-sm text-gray-700 bg-gray-100 px-4 py-2">
+  <ol class="flex flex-wrap gap-1">
+    <!-- Home -->
+    <li>
+      <a href="/" class="text-blue-700 hover:underline">🏠 Home</a>
+    </li>
+
+    {{/* 親ページ／セクションを浅い順に並べる */}}
+    {{- with .Ancestors -}}
+      {{- range .Reverse }}
+        <li>›</li>
+        <li>
+          <a href="{{ .RelPermalink }}" class="text-blue-700 hover:underline">
+            {{ with .LinkTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+          </a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+
+    {{/* 今のページ（Home 以外のときだけ表示）*/}}
+    {{ if not .IsHome }}
+      <li>›</li>
+      <li class="font-semibold text-gray-900">
+        {{ with .LinkTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}
+      </li>
+    {{ end }}
+  </ol>
+</nav>
