@@ -53,8 +53,10 @@
       {{ $loc := .Params.location }}
       {{ $country := .Params.country }}
       {{ $distance := .Params.distance }}
+      {{ $term := .Params.term }}
       {{ $tags := delimit (.Params.tags | default (slice)) "," }}
       {{ $d := time.AsTime (or .Params.eventdate .Date) }}
+      {{ $lastmod := time.AsTime (or .Params.Date .Date) }}
       {{ $year := $d | time.Format "2006" }}
       {{ $count := len .RegularPagesRecursive }}
 
@@ -67,10 +69,11 @@
           <div class="p-4">
             <h2 class="mt-2 text-lg font-semibold leading-snug group-hover:underline">{{ .Title }}</h2>
             <div class="flex items-center gap-2 text-sm text-gray-500">
-              <time datetime="{{ $d | time.Format "2006-01-02" }}">{{ $d | time.Format "2006-01-02" }}</time>
-              {{ with $loc }}<span>• {{ . }}</span>{{ end }}
-              {{ with $country }}<span>• {{ . }}</span>{{ end }}
+              {{ with $term }}<span> {{ . }}</span>{{ end }}
+              {{/* {{ with $loc }}<span>• {{ . }}</span>{{ end }} */}}
+              {{ with $country }}<span>{{ . }}</span>{{ end }}
               {{ with $distance }}<span class="ml-auto">{{ . }}</span>{{end}}
+              <time datetime="{{ $lastmod | time.Format "2006-01-02" }}">({{ $lastmod | time.Format "2006-01-02" }}更新)</time>
             </div>
           <div class="aspect-[16/9] overflow-hidden bg-gray-100">
             <img src="{{ $cover }}" alt="{{ .Title }} cover"
