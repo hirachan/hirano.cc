@@ -5,7 +5,7 @@ date: 2025-09-19T06:00:00Z
 draft: false
 weight: 300
 twitterImage: "silkroad2000/img/gsr2000-satelite.png"
-description: ""
+description: "2日走って577kmまで来ました。次のチェックポイントは1000km地点なので、ここから420km程あります。一気にそこまで行くのは遠いので、途中で休みたいと思います。"
 ---
 ## 今日の予定
 

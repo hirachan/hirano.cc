@@ -5,7 +5,7 @@ date: 2025-09-20T06:00:00Z
 draft: false
 weight: 400
 twitterImage: "silkroad2000/img/gsr2000-satelite.png"
-description: ""
+description: "今日は折り返し地点のXiva(ヒバ)まで行ってゆっくり観光でもして休もうと思います。ここまで、840km。日時は9/20の午前6時です。ここの地点でのタイムリミットは10km/hなので、今日の19:00です。まだ、11時間ほど貯金がある状態です。"
 ---
 ## 今日の予定
 
