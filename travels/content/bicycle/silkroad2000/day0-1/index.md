@@ -1,6 +1,6 @@
 ---
-title: "SilkRoad2000km （申し込みと概要）"
-linktitle: "申し込みと概要"
+title: "SilkRoad2000km （出発まで）"
+linktitle: "きっかけから出発まで"
 term: 2025 9/17 - 9/25
 date: 2025-09-17T00:00:00Z
 draft: false
